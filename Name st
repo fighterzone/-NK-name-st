@@ -1,0 +1,2406 @@
+
+<style>
+  #kawsar-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: radial-gradient(circle, #102748 0%, #050812 75%);
+    animation: introExit 0.8s ease 4s forwards;
+  }
+
+  #kawsar-intro .welcome {
+    margin: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: clamp(25px, 7vw, 55px);
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    text-shadow: 0 0 12px #00d9ff, 0 0 35px #006aff;
+    animation: welcomeIn 1.2s cubic-bezier(.2,.8,.2,1) both,
+               neonPulse 1.5s ease-in-out 1.2s infinite alternate;
+  }
+
+  #kawsar-intro .divider {
+    width: 0;
+    height: 3px;
+    margin: 18px 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #007bff, #00ffff);
+    box-shadow: 0 0 18px #00d9ff;
+    animation: lineIn 0.9s ease 0.7s forwards;
+  }
+
+  #kawsar-intro .credit {
+    margin: 0;
+    color: #00e5ff;
+    font: bold clamp(13px, 3.5vw, 19px) Arial, sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 0 0 12px #00aaff;
+    animation: welcomeIn 1s ease 0.8s both;
+  }
+
+  @keyframes welcomeIn {
+    from { opacity: 0; transform: translateY(35px) scale(.88); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  @keyframes neonPulse {
+    from { text-shadow: 0 0 10px #00d9ff, 0 0 25px #006aff; }
+    to   { text-shadow: 0 0 25px #00d9ff, 0 0 55px #006aff; }
+  }
+
+  @keyframes lineIn {
+    from { width: 0; }
+    to   { width: min(220px, 70vw); }
+  }
+
+  @keyframes introExit {
+    to {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+</style>
+
+<div id="kawsar-intro">
+  <h1 class="welcome">WELCOME NAME IS STYLE</h1>
+  <div class="divider"></div>
+  <p class="credit">DEVELOPER BY KAWSAR</p>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>NickFinder ⚡ 😍 𝐹𝒶𝓃𝒸𝓎 & 𝕊𝕥𝕪𝕝𝕚𝕤𝕙 Ⓣⓔⓧⓣ Nick Names ✅</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="canonical" href="https://www.nickfinder.net/" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.nickfinder.net/img/favicon.ico">
+  <meta name="description"
+    content="ℕ𝕚𝕔𝕜 𝔽𝕚𝕟𝕕𝕖𝕣 𓂀 😍 convert normal TEXT nicknames into Ⓕⓐⓝⓒⓨ looking text for PUBG and Free Fire games with 𝕮𝖔𝖕𝖞 𝖆𝖓𝖉 𝕻𝖆𝖘𝖙𝖊." />
+  <meta name="theme-color" content="#6001a8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#6001a8">
+  <meta name="apple-mobile-web-app-title" content="Fancy Nick Name">
+  <meta name="apple-touch-icon" content="https://www.nickfinder.net/img/apple-touch-icon.png">
+  <meta name="msapplication-TileImage" content="https://www.nickfinder.net/img/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#6001a8">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NickFinder ⚡ 😍 𝐹𝒶𝓃𝒸𝓎 & 𝕊𝕥𝕪𝕝𝕚𝕤𝕙 Ⓣⓔⓧⓣ Nick Names ✅" />
+  <meta property="og:description"
+    content="ℕ𝕚𝕔𝕜 𝔽𝕚𝕟𝕕𝕖𝕣 𓂀 😍 convert normal TEXT nicknames into Ⓕⓐⓝⓒⓨ looking text for PUBG and Free Fire games with 𝕮𝖔𝖕𝖞 𝖆𝖓𝖉 𝕻𝖆𝖘𝖙𝖊." />
+  <meta property="og:url" content="https://www.nickfinder.net/" />
+  <meta property="og:image"
+    content="https://1.bp.blogspot.com/-TB26BU_2TP8/YHAO-Lr-SPI/AAAAAAAAGHo/JjYaujaJ7RYzyWiyqOXnKudvBJAKng8CwCLcBGAsYHQ/s16000/nickfinder.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description"
+    content="ℕ𝕚𝕔𝕜 𝔽𝕚𝕟𝕕𝕖𝕣 𓂀 😍 convert normal TEXT nicknames into Ⓕⓐⓝⓒⓨ looking text for PUBG and Free Fire games with 𝕮𝖔𝖕𝖞 𝖆𝖓𝖉 𝕻𝖆𝖘𝖙𝖊." />
+  <meta name="twitter:title" content="NickFinder ⚡ 😍 𝐹𝒶𝓃𝒸𝓎 & 𝕊𝕥𝕪𝕝𝕚𝕤𝕙 Ⓣⓔⓧⓣ Nick Names ✅" />
+  <meta name="twitter:image"
+    content="https://1.bp.blogspot.com/-TB26BU_2TP8/YHAO-Lr-SPI/AAAAAAAAGHo/JjYaujaJ7RYzyWiyqOXnKudvBJAKng8CwCLcBGAsYHQ/s16000/nickfinder.png" />
+
+
+  <style>
+    ::-webkit-scrollbar-thumb {
+      background: #6001a8
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f9f9f9
+    }
+
+    ::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+
+
+
+    *,
+    body,
+    html {
+      box-sizing: border-box
+    }
+
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      line-height: 1.5;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-weight: 400;
+      background: url(img/bg.png);
+      background-repeat: repeat;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: sans-serif;
+      font-weight: 300;
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    input::placeholder {
+      color: #888;
+      opacity: 1;
+    }
+
+
+    .aryafonts:hover p {
+      color: #6001a8;
+    }
+
+    header {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      background: #6001a8;
+      z-index: 9999;
+      float: left;
+      box-shadow: 0px 6px 6px 0 rgb(0 0 0 / 35%)
+    }
+
+    header .site-title span {
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #444;
+      font-size: 12px;
+      margin-bottom: 5px;
+      display: inline-block;
+      background: #ffffff;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    .settings-share {
+      float: right;
+      width: auto;
+      margin-top: 6px;
+    }
+
+    .menusection {
+      float: left;
+      width: 23%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-box-shadow: 8px 0 17px 0 rgb(0 0 0 / 28%);
+      -moz-box-shadow: 8px 0 17px 0 rgba(0, 0, 0, .28);
+      box-shadow: 8px 0 17px 0 rgb(0 0 0 / 28%);
+      padding: 4px;
+      display: none;
+      background: #6001a8;
+      z-index: 9999;
+    }
+
+    div#clock {
+      color: #fff;
+      display: block;
+      position: fixed;
+      right: 10px;
+      background: #d90000;
+      top: 10px;
+      text-align: center;
+      font-size: 20px;
+      z-index: 9;
+      padding: 6px 0;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.21);
+    }
+
+    .menusection .close {
+      position: absolute;
+      right: -35px;
+      top: 10px;
+      font-size: 18px;
+      padding: 10px 17px;
+      border: none;
+      background: #6001a8;
+      color: #fff;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+      z-index: 3;
+      box-shadow: 5px 0px 5px 0 rgb(0 0 0 / 21%);
+    }
+
+    .menusection h2 a {
+      font-size: 18px;
+
+      margin: 0 0 3px 0;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    .menusection img {
+      width: 200px;
+    }
+
+    .bookmarks {
+      padding: 5px;
+      float: left;
+      width: 100%;
+      overflow-y: scroll;
+      height: 80%;
+    }
+
+    .bookmarks a {
+      display: inline-block;
+      text-transform: uppercase;
+      width: 100%;
+      float: left;
+      text-align: right;
+      font-family: sans-serif;
+      color: #6001a8;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .bookmarks a:hover {
+      background: #6001a8;
+      color: #fff;
+    }
+
+    .menusection .bookmarks a {
+      color: #ffffff82;
+    }
+
+    .menusection .bookmarks a:hover {
+      color: #000;
+      background: #fff;
+    }
+
+    .cats a {
+      display: inline-block;
+      float: left;
+      width: auto;
+      border: 1px solid;
+      margin: 5px;
+    }
+
+    header a {
+      font-family: pacifico, cursive;
+      padding: 5px 0 0;
+      display: block;
+      font-size: 25px;
+      color: #fff;
+      letter-spacing: 3px;
+    }
+
+    .site-title img {
+      width: 200px;
+      padding-top: 7px;
+    }
+
+
+    /* share button */
+    .addthis_inline_share_toolbox {
+      clear: none;
+      display: inline-block;
+    }
+
+    /* side ads box */
+
+    #fancy-info.disappearing {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility .1s, opacity .1s linear;
+      transition-delay: .1s;
+
+    }
+
+    #fancy-info {
+      position: absolute;
+      top: -2000px;
+      left: -3000px;
+      width: 360px;
+      cursor: pointer;
+      background: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+      z-index: 10000;
+    }
+
+    #fancytext-name {
+      background: #000;
+      text-align: center;
+      padding: 3px 4px;
+      font-size: 16px;
+      color: #ffffff80;
+    }
+
+    #fancy-info .textarea {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      display: block;
+      cursor: text;
+      background: #e6ecf4;
+      border: none;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+
+    #fancy-info-copy-container {
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+
+    #adsInPopupDialog {
+      padding-top: 12px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    #fancy-copy-btn {
+      text-align: center;
+      height: 30px;
+      width: 140px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      background: #18a00a;
+      border: none;
+      color: #ffffff82;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+
+    #fancy-copy-btn:hover {
+      color: #fff;
+    }
+
+    /* menu */
+    main {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 970px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      color: #777;
+      float: left;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 17px;
+      margin: 0;
+      text-align: left;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    #random-cloud {
+      font-family: Arial Unicode MS, lucida grande, tahoma, verdana, arial, sans-serif;
+      text-align: center;
+      width: 100%;
+      height: 120px;
+      float: left;
+      overflow: auto;
+      padding-top: 10px;
+    }
+
+
+    #random-cloud div {
+      padding: 0;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid transparent;
+      color: #444;
+      position: relative;
+    }
+
+    #random-cloud div:hover {
+      background: #fff;
+      border: 1px solid #ececec;
+      color: #000;
+    }
+
+    #random-cloud button {
+      top: -5px !important;
+      right: -15px !important;
+      padding: 3px 8px !important;
+    }
+
+    #random-cloud .size10 {
+      font-size: 35px;
+    }
+
+    #random-cloud .size9 {
+      font-size: 32px;
+    }
+
+    #random-cloud .size8 {
+      font-size: 29px;
+
+    }
+
+    #random-cloud .size7 {
+      font-size: 26px;
+
+    }
+
+    #random-cloud .size6 {
+      font-size: 25px;
+
+    }
+
+    #random-cloud .size5 {
+      font-size: 22px;
+
+    }
+
+    #random-cloud .size4 {
+      font-size: 19px;
+
+    }
+
+    #random-cloud .size3 {
+      font-size: 16px;
+
+    }
+
+    #random-cloud .size2 {
+      font-size: 14px;
+    }
+
+    #random-cloud .size1 {
+      font-size: 13px;
+    }
+
+
+    .ads {
+      display: table !important;
+      margin: 12px 0 !important;
+      float: left;
+      clear: both;
+      width: 100% !important;
+    }
+
+    #mobile-fly-menu {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      width: 50px;
+      height: 40px;
+      float: left;
+    }
+
+    #mobile-fly-menu:hover span {
+      background: #fff;
+    }
+
+    #mobile-fly-menu span:nth-child(1) {
+      top: 10px;
+      width: 38px;
+    }
+
+    #mobile-fly-menu span:nth-child(2) {
+      top: 19px;
+      width: 30px
+    }
+
+    #mobile-fly-menu span:nth-child(3) {
+      top: 28px;
+      width: 22px
+    }
+
+    #mobile-fly-menu span {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
+      display: block;
+      position: absolute;
+      left: 12px;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -ms-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+      height: 4px;
+      background: #ffffff82
+    }
+
+    .thenitesharya-text {
+      position: relative;
+      float: left;
+      width: 100%;
+    }
+
+    .thenitesharya-text .clear {
+      position: absolute;
+      right: 4px;
+      color: #de0707;
+      font-size: 20px;
+      padding: 5px 15px;
+      line-height: 1.5;
+      background: transparent;
+      border: none;
+      z-index: 999;
+      cursor: pointer;
+      top: 3px;
+      outline: none;
+    }
+
+    .thenitesharya-text .clear:hover {
+      color: #000;
+    }
+
+    .thenitesharya-text p {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #777;
+      padding: 0px;
+      margin: 0;
+      margin-top: 5px;
+    }
+
+    .thenitesharya-text.fixedtop {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+
+    .share-buttons {
+      float: right;
+      margin-top: 8px;
+    }
+
+    .settings {
+      float: left;
+      margin-top: 3px;
+    }
+
+    .settings input {
+      box-shadow: none;
+      cursor: pointer;
+      padding: 2px;
+      width: 200px;
+    }
+
+    .font-size {
+      float: right;
+      padding: 5px;
+    }
+
+    .font-size span {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #ffffff82;
+    }
+
+    .share-link {
+      display: block;
+      float: left;
+      width: 100%;
+      text-align: center;
+      padding: 0 0 10px 0;
+      color: #777;
+      font-size: 13px;
+      position: relative;
+    }
+
+
+
+
+    .slider {
+      -webkit-appearance: none;
+      width: 220px;
+      height: 2px;
+      background: #6001a8;
+      outline: none;
+      border-radius: 3px;
+      margin-left: 10px;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background: #6001a8;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 21%);
+    }
+
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: #6001a8;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 1px 2px 4px 0 rgb(0 0 0 / 21%);
+    }
+
+
+    .aryafonts {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      cursor: pointer;
+      background: #ffffff87;
+      border-radius: 3px;
+      padding: 5px;
+    }
+
+    .aryafonts span {
+      font-size: 12px;
+      position: absolute;
+      left: 15px;
+      bottom: 10px;
+      color: #989898;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-variant-caps: all-small-caps;
+      z-index: 2;
+    }
+
+    .aryafonts p {
+      flex: 1;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background: #efefef;
+      border-radius: 10px;
+      padding: 10px 0 25px 10px;
+      font-size: 23px;
+      color: #000;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      outline: none;
+      text-align: left;
+    }
+
+    .aryafonts p:hover {
+      background: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .aryafonts p:active {
+      transform: scale(0.98);
+      background: #e2e2e2;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .aryafonts p:focus,
+    .aryafonts p:focus-visible {
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(109, 93, 252, 0.25);
+    }
+
+    .aryafonts button {
+      flex-shrink: 0;
+      padding: 10px 14px;
+      font-size: 12px;
+      border: none;
+      border-radius: 12px;
+      background: #6001a8;
+      color: #ffffff8f;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+
+    .aryafonts button:hover {
+      background: #530192;
+      color: #fff;
+    }
+
+    .aryafonts button:active {
+      background: #530192;
+      color: #fff;
+    }
+
+    p.aryapage {
+
+      width: 100%;
+    }
+
+    .aryafonts .copied-msg {
+      font-size: 16px;
+      background: #018d24;
+      color: white;
+      border-radius: 20px;
+      white-space: nowrap;
+      padding: 5px 8px 8px;
+      top: 10px;
+      right: 10px;
+      left: auto;
+      bottom: auto;
+    }
+
+    p.loadmore {
+      text-align: center;
+      clear: both;
+      margin-bottom: 0;
+    }
+
+
+    h4 {
+      text-transform: uppercase;
+      color: #777;
+      backface-visibility: hidden;
+      margin: 0;
+      padding: 10px;
+
+      width: 100%;
+      text-align: left;
+    }
+
+
+    .share {
+      padding-top: 3px;
+      display: block;
+      float: left;
+      text-transform: uppercase;
+      color: #6001a8;
+      margin-right: 5px;
+      font-size: 15px;
+    }
+
+    #thenitesharya-text {
+      width: 100%;
+      padding: 0.6em 0;
+      outline: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+      margin-bottom: 0;
+      display: block;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 400;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      border-radius: 0 0 10px 10px;
+      border-left: 2px solid #6001a8;
+      border-right: 2px solid #6001a8;
+      border-bottom: 2px solid #6001a8;
+      background: #fff;
+      box-shadow: 0 8px 20px 0 rgb(0 0 0 / 15%);
+    }
+
+    #thenitesharya-text::placeholder {
+      color: #999;
+      font-size: 18px;
+    }
+
+    .separator {
+      float: left;
+    }
+
+    .toplink {
+      float: left;
+      margin-left: 5px;
+    }
+
+    .toplink a {
+      display: inline-block;
+      padding: 7px 15px;
+      color: #0d67ce;
+      font-size: 14px;
+      background: #023c80;
+      border-radius: 3px;
+    }
+
+    .toplink a:hover {
+      color: #000;
+      background: #fff;
+    }
+
+
+
+    .page-load-status {
+      text-align: center;
+      color: #777;
+      float: left;
+      width: 100%;
+    }
+
+    .infinite-scroll-last {
+      font-size: 20px;
+      margin: 2px 0;
+      padding: 2px 0;
+    }
+
+    a.aryapage-next {
+      visibility: hidden;
+    }
+
+    footer {
+      width: 100%;
+      float: left;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      background: #f4f5f7;
+      padding-bottom: 50px;
+    }
+
+    footer h2 {
+      color: #000;
+      text-transform: capitalize;
+      font-size: 35px;
+    }
+
+    footer img {
+      max-width: 900px;
+    }
+
+    footer p {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      color: #000;
+      font-family: sans-serif;
+    }
+
+
+
+    p.other-platform,
+    h1 {
+      text-align: center;
+    }
+
+    p.other-platform img {
+      width: auto;
+      height: 90px;
+    }
+
+    .links {
+      text-align: center;
+      clear: both;
+      float: left;
+      width: 100%;
+      padding-bottom: 10px;
+      background: #fff;
+    }
+
+    .links a {
+      background: #6001a8;
+      color: #fff;
+      display: inline-block;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 3px;
+      justify-content: center;
+      padding: 7px 13px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .links a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .aload {
+      font-size: 20px;
+      /* change size here */
+      position: relative;
+      width: 4em;
+      height: 1em;
+      margin: 10px auto;
+    }
+
+    .aload span {
+      display: block;
+      width: 1em;
+      height: 1em;
+      border-radius: 0.5em;
+      background: #6001a8;
+      /* change color here */
+      position: absolute;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+    }
+
+    .aload span:nth-child(1),
+    .aload span:nth-child(2) {
+      left: 0;
+    }
+
+    .aload span:nth-child(3) {
+      left: 1.5em;
+    }
+
+    .aload span:nth-child(4) {
+      left: 3em;
+    }
+
+    @keyframes reveal {
+      from {
+        transform: scale(0.001);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slide {
+      to {
+        transform: translateX(1.5em)
+      }
+    }
+
+    .aload span:nth-child(1) {
+      animation-name: reveal;
+    }
+
+    .aload span:nth-child(2),
+    .aload span:nth-child(3) {
+      animation-name: slide;
+    }
+
+    .aload span:nth-child(4) {
+      animation-name: reveal;
+      animation-direction: reverse;
+    }
+
+    #load-more {
+      font-size: 17px;
+      padding: 10px 55px;
+      border: none;
+      border: 1px solid #dcdcdc;
+      color: #444;
+      margin: 10px 0 5px 0;
+      cursor: pointer;
+      background: #fff;
+      text-align: center;
+      outline: none;
+      border-radius: 10px;
+    }
+
+    #load-more:hover {
+      background: #f1f1f1;
+      color: #000;
+    }
+
+    #scroll,
+    .randomgen {
+      display: none;
+      position: fixed;
+      bottom: 20%;
+      right: 0;
+      background: #fff;
+      z-index: 99999;
+      color: #8e8e8e;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 9px 11px;
+      box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, .21);
+      border-radius: 2px;
+    }
+
+    .randomgen {
+      display: block;
+      position: relative;
+      float: right;
+      text-transform: uppercase;
+      background: #fff;
+      font-size: 15px;
+      bottom: auto;
+      position: absolute;
+      right: 0;
+    }
+
+    #scroll:hover,
+    .randomgen:hover {
+      color: #fff;
+      background: #6001a8;
+    }
+
+    .site-link {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding-bottom: 20px;
+    }
+
+    .site-link a {
+      font-size: 20px;
+      display: block;
+      padding: 3px 20px;
+      text-align: left;
+    }
+
+    .site-link a:hover {
+      color: #fff9;
+    }
+
+    .top-link a {
+      display: inline-block;
+      border-radius: 3px;
+      color: #444;
+      padding: 5px 10px;
+      margin: 7px 2px;
+    }
+
+    .top-link a:hover {
+      color: #000;
+    }
+
+    .loadmore {
+      float: left;
+      width: 100%;
+    }
+
+    .randomgen img,
+    #scroll img {
+      width: 23px;
+    }
+
+    span.sharetext {
+      color: #000;
+      display: inline-block;
+      padding: 8px;
+      font-size: 15px;
+    }
+
+    .ssb_link,
+    .ssb_icon {
+      display: inline-block
+    }
+
+    .ssb_link {
+      text-decoration: none;
+      color: #fff;
+      margin: 0.1em
+    }
+
+    .r-s-b {
+      border-radius: 5px;
+      transition: 25ms ease-out;
+      padding: 0.2em 0.3em;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+
+    .ssb_icon svg {
+      width: 1em;
+      height: 1em;
+      margin-right: 0.4em;
+      vertical-align: top
+    }
+
+    .ssb-small svg {
+      margin: 0;
+      vertical-align: middle
+    }
+
+    /* Non solid icons get a stroke */
+    .ssb_icon {
+      stroke: #fff;
+      fill: none
+    }
+
+    /* Solid icons get a fill */
+    .ssb_icon--solid,
+    .ssb_icon--solidcircle {
+      fill: #fff;
+      stroke: none
+    }
+
+    .ssb-twitter {
+      background-color: #55acee
+    }
+
+    .ssb-twitter:hover {
+      background-color: #2795e9
+    }
+
+    .ssb-pinterest {
+      background-color: #bd081c
+    }
+
+    .ssb-pinterest:hover {
+      background-color: #8c0615
+    }
+
+    .ssb-facebook {
+      background-color: #3b5998
+    }
+
+    .ssb-facebook:hover {
+      background-color: #2d4373
+    }
+
+    .ssb-tumblr {
+      background-color: #35465C
+    }
+
+    .ssb-tumblr:hover {
+      background-color: #222d3c
+    }
+
+    .ssb-reddit {
+      background-color: #5f99cf
+    }
+
+    .ssb-reddit:hover {
+      background-color: #3a80c1
+    }
+
+    .ssb-google {
+      background-color: #dd4b39
+    }
+
+    .ssb-google:hover {
+      background-color: #c23321
+    }
+
+    .ssb-linkedin {
+      background-color: #0077b5
+    }
+
+    .ssb-linkedin:hover {
+      background-color: #046293
+    }
+
+    .ssb-email {
+      background-color: #777
+    }
+
+    .ssb-email:hover {
+      background-color: #5e5e5e
+    }
+
+    .ssb-xing {
+      background-color: #1a7576
+    }
+
+    .ssb-xing:hover {
+      background-color: #114c4c
+    }
+
+    .ssb-whatsapp {
+      background-color: #25D366
+    }
+
+    .ssb-whatsapp:hover {
+      background-color: #1da851
+    }
+
+    .ssb-hackernews {
+      background-color: #FF6600
+    }
+
+    .ssb-hackernews:hover,
+    .ssb-hackernews:focus {
+      background-color: #FB6200
+    }
+
+    .ssb-vk {
+      background-color: #507299
+    }
+
+    .ssb-vk:hover {
+      background-color: #43648c
+    }
+
+    .ssb-facebook {
+      background-color: #3b5998;
+      border-color: #3b5998;
+    }
+
+    .ssb-facebook:hover,
+    .ssb-facebook:active {
+      background-color: #2d4373;
+      border-color: #2d4373;
+    }
+
+    .ssb-twitter {
+      background-color: #55acee;
+      border-color: #55acee;
+    }
+
+    .ssb-twitter:hover,
+    .ssb-twitter:active {
+      background-color: #2795e9;
+      border-color: #2795e9;
+    }
+
+    .ssb-email {
+      background-color: #777777;
+      border-color: #777777;
+    }
+
+    .ssb-email:hover,
+    .ssb-email:active {
+      background-color: #5e5e5e;
+      border-color: #5e5e5e;
+    }
+
+    .ssb-reddit {
+      background-color: #5f99cf;
+      border-color: #5f99cf;
+    }
+
+    .ssb-reddit:hover,
+    .ssb-reddit:active {
+      background-color: #3a80c1;
+      border-color: #3a80c1;
+    }
+
+    .ssb-whatsapp {
+      background-color: #25D366;
+      border-color: #25D366;
+    }
+
+    .ssb-whatsapp:hover,
+    .ssb-whatsapp:active {
+      background-color: #1DA851;
+      border-color: #1DA851;
+    }
+
+    .ssb-telegram {
+      background-color: #54A9EB;
+    }
+
+    .ssb-telegram:hover {
+      background-color: #4B97D1;
+    }
+
+    .infinite-scroll {
+      display: block;
+      text-align: right;
+    }
+
+    .pages {
+      text-align: center;
+    }
+
+    .pages a {
+      display: inline-block;
+      padding: 8px;
+      border-radius: 5px;
+      background: #fff;
+      margin: 5px;
+
+    }
+
+    .flourish-popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 13, 13, .55);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      animation: fadeIn .2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .flourish-popup.hidden {
+      display: none;
+    }
+
+    .popup-box {
+      background: #efefef;
+      width: 92%;
+      max-width: 460px;
+      max-height: 72vh;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .popup-box::before {
+      content: '';
+      display: block;
+      height: 3px;
+      background: #000;
+      flex-shrink: 0;
+    }
+
+    @keyframes popIn {
+      from {
+        transform: scale(.94) translateY(10px);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #6001a8;
+      padding: 4px 16px;
+    }
+
+    .popup-header h3 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #fff;
+      padding: 12px 0;
+      margin: 0;
+      letter-spacing: .3px;
+    }
+
+    .popup-header button {
+      background: none;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 14px;
+      transition: all .2s;
+    }
+
+    .popup-header button:hover {
+      color: #000;
+    }
+
+    #flourishList {
+      padding: 14px;
+      overflow-y: auto;
+      list-style: none;
+      flex: 1;
+    }
+
+    #flourishList li {
+      margin-bottom: 8px;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1.5px solid #9a9a9a;
+      background: #fff;
+      transition: all .2s ease-out;
+    }
+
+    #flourishList li:hover {
+      border-color: #000;
+      transform: translateY(-1px);
+      box-shadow: 3px 3px 0 0 #6001a8;
+    }
+
+    #flourishList .count {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 10px;
+      color: #444;
+      padding: 2px 8px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    #flourishList li p {
+      font-size: 1rem !important;
+      color: #000;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      text-align: center;
+      padding: 12px;
+      font-family: var(--pfont);
+      cursor: pointer;
+    }
+
+    #flourishList li:hover p {
+      color: var(--ink-black);
+    }
+
+    .flourishit {
+      padding: 12px 16px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .select-flourish {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .select-flourish label {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    #flourishSelect {
+      appearance: none;
+      padding: 9px 28px 9px 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      border: 1.5px solid #000;
+      background: white;
+      color: #000;
+      cursor: pointer;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    #flourishSelect:focus {
+      border-color: #000;
+      box-shadow: 0 0 0 3px #000;
+    }
+
+    #flourishRegenerate {
+      padding: 15px 30px;
+      border-radius: 5px;
+      background: #000;
+      color: #fff;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      transition: transform .15s var(--ease-spring), box-shadow .2s, background .2s, color .2s;
+    }
+
+    #flourishRegenerate:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    #flourishRegenerate:active {
+      transform: scale(.96);
+    }
+
+
+    @media only screen and (max-width:600px) {
+      .container {
+        margin: 0 15px;
+      }
+
+      .aryafonts p {
+        font-size: 17px;
+      }
+
+      .site-title img {
+        width: 220px;
+      }
+
+      footer .container img {
+        width: 100%;
+      }
+
+      .menusection {
+        width: 75%;
+      }
+    }
+  </style>
+  <script async='async' crossorigin='anonymous'
+    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3643058943427176'></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <span id="mobile-fly-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="menusection">
+        <button class="close">X</button>
+        <h2><a href="https://www.nickfinder.net/"><img alt="nickfinder" title="nickfinder"
+              src="nickfinder_logo.png" /></a></h2>
+        <div class="bookmarks">
+          <a href="cute.html">Cute</a>
+          <a href="symbolic.html">Symbolic</a>
+          <a href="small.html">Small</a>
+          <a href="lines.html">Lines</a>
+          <a href="squiggle.html">Squiggle</a>
+          <a href="ugly.html">Ugly</a>
+          <a href="weird.html">Weird</a>
+          <a href="joiner.html">Joiner</a>
+          <a href="box.html">Box</a>
+          <a href="stardecorated.html">Star decorated</a>
+          <a href="heartdecorated.html">Heart decorated</a>
+          <a href="emoticon.html">Emoticon</a>
+          <a href="thankyou.html">Thankyou</a>
+          <a href="sad.html">Sad</a>
+          <a href="asian.html">Asian</a>
+          <a href="random.html">Random</a>
+
+        </div>
+      </div>
+      <div class="site-title"><a href="https://www.nickfinder.net/" rel="home"><img alt="nickfinder" title="nickfinder"
+            src="nickfinder_logo.png" /></a><span>'*•.¸♡ Bookmarks Us ♡¸.•*'</span></div>
+    </div>
+
+  </header>
+
+
+
+  <div class="thenitesharya-text">
+    <div class="container" style="position: relative;">
+      <textarea id="thenitesharya-text" placeholder="✏️ Your Name Here :)"></textarea><button class="clear">X</button>
+    </div>
+  </div>
+  <div class="settings-share">
+    <span class="sharetext">Share (☞ ͡° ͜ʖ ͡°)☞ </span>
+    <!-- Sharingbutton Facebook -->
+    <a class="ssb_link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.nickfinder.net%2F"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="r-s-b ssb-facebook ssb-style_1">
+        <div aria-hidden="true" class="ssb_icon ssb_icon--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Sharingbutton Twitter -->
+    <a class="ssb_link"
+      href="https://twitter.com/intent/tweet/?text=NickFinder%20%E2%9A%A1%20%F0%9F%98%8D%20%F0%9D%90%B9%F0%9D%92%B6%F0%9D%93%83%F0%9D%92%B8%F0%9D%93%8E%20%26%20%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%AA%F0%9D%95%9D%F0%9D%95%9A%F0%9D%95%A4%F0%9D%95%99%20%E2%93%89%E2%93%94%E2%93%A7%E2%93%A3%20Nick%20Names%20&amp;url=https%3A%2F%2Fwww.nickfinder.net%2F"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="r-s-b ssb-twitter ssb-style_1">
+        <div aria-hidden="true" class="ssb_icon ssb_icon--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Sharingbutton E-Mail -->
+    <a class="ssb_link" href="/cdn-cgi/l/email-protection#a49bd7d1c6cec1c7d099eacdc7cfe2cdcac0c1d681969481e196819de581e59581969481e294819de2819d9c819ce081969481e294819de0819d9481e69d81e294819de0819d9681e69281e294819de0819d97819c9781e294819de0819d9681e69c81e294819de0819d97819ce181969481969281969481e294819de0819d91819ce581e294819de0819d9181e59181e294819de0819d9181e5e581e294819de0819d91819de081e294819de0819d91819de581e294819de0819d9181e59081e294819de0819d91819d9d81969481e196819d97819c9d81e196819d97819d9081e196819d9781e59381e196819d9781e597819694eacdc7cf819694eac5c9c1d781969482c5c9d49fc6cbc0dd99ccd0d0d4d78197e58196e28196e2d3d3d38acacdc7cfc2cdcac0c1d68acac1d08196e2" target="_self" rel="noopener" aria-label="">
+      <div class="r-s-b ssb-email ssb-style_1">
+        <div aria-hidden="true" class="ssb_icon ssb_icon--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Sharingbutton Reddit -->
+    <a class="ssb_link"
+      href="https://reddit.com/submit/?url=https%3A%2F%2Fwww.nickfinder.net%2F&amp;resubmit=true&amp;title=NickFinder%20%E2%9A%A1%20%F0%9F%98%8D%20%F0%9D%90%B9%F0%9D%92%B6%F0%9D%93%83%F0%9D%92%B8%F0%9D%93%8E%20%26%20%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%AA%F0%9D%95%9D%F0%9D%95%9A%F0%9D%95%A4%F0%9D%95%99%20%E2%93%89%E2%93%94%E2%93%A7%E2%93%A3%20Nick%20Names%20"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="r-s-b ssb-reddit ssb-style_1">
+        <div aria-hidden="true" class="ssb_icon ssb_icon--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Sharingbutton WhatsApp -->
+    <a class="ssb_link"
+      href="whatsapp://send?text=NickFinder%20%E2%9A%A1%20%F0%9F%98%8D%20%F0%9D%90%B9%F0%9D%92%B6%F0%9D%93%83%F0%9D%92%B8%F0%9D%93%8E%20%26%20%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%AA%F0%9D%95%9D%F0%9D%95%9A%F0%9D%95%A4%F0%9D%95%99%20%E2%93%89%E2%93%94%E2%93%A7%E2%93%A3%20Nick%20Names%20%20https%3A%2F%2Fwww.nickfinder.net%2F"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="r-s-b ssb-whatsapp ssb-style_1">
+        <div aria-hidden="true" class="ssb_icon ssb_icon--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- Sharingbutton Telegram -->
+    <a class="ssb_link"
+      href="https://telegram.me/share/url?text=NickFinder%20%E2%9A%A1%20%F0%9F%98%8D%20%F0%9D%90%B9%F0%9D%92%B6%F0%9D%93%83%F0%9D%92%B8%F0%9D%93%8E%20%26%20%F0%9D%95%8A%F0%9D%95%A5%F0%9D%95%AA%F0%9D%95%9D%F0%9D%95%9A%F0%9D%95%A4%F0%9D%95%99%20%E2%93%89%E2%93%94%E2%93%A7%E2%93%A3%20Nick%20Names%20&amp;url=https%3A%2F%2Fwww.nickfinder.net%2F"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="r-s-b ssb-telegram ssb-style_1">
+        <div aria-hidden="true" class="ssb_icon ssb_icon--solid">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M.707 8.475C.275 8.64 0 9.508 0 9.508s.284.867.718 1.03l5.09 1.897 1.986 6.38a1.102 1.102 0 0 0 1.75.527l2.96-2.41a.405.405 0 0 1 .494-.013l5.34 3.87a1.1 1.1 0 0 0 1.046.135 1.1 1.1 0 0 0 .682-.803l3.91-18.795A1.102 1.102 0 0 0 22.5.075L.706 8.475z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+
+  </div>
+
+
+
+  <main>
+    <button class="randomgen" onclick="randomgen()"><img src="img/random.png"></button>
+    <div id="random-cloud">
+      <div class="item size5">｡*ﾟ.*.｡(っ ᐛ )っ 丂ㄒㄚㄥ丨丂卄 几卂爪乇</div>
+      <div class="item size4">°†° «[【S】【t】【y】【l】【i】【s】【h】 【N】【a】【m】【e】]» °†°</div>
+      <div class="item size3">•´¯`•. 【S】【t】【y】【l】【i】【s】【h】 【N】【a】【m】【e】 .•´¯`•</div>
+      <div class="item size5">🌊 .·:*¨รՇץɭเรђ ภค๓є¨*:·. 🌊</div>
+      <div class="item size1">◦•●◉✿ S⨳t⨳y⨳l⨳i⨳s⨳h⨳ ⨳N⨳a⨳m⨳e ✿◉●•◦</div>
+      <div class="item size5">┕━━☽【⦑S⦒⦑t⦒⦑y⦒⦑l⦒⦑i⦒⦑s⦒⦑h⦒ ⦑N⦒⦑a⦒⦑m⦒⦑e⦒】☾━━┙</div>
+    </div>
+
+    <div class="container">
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.rankarhub.fancyfontkeyboard"><img
+          width="150px" src="/img/play.png" /></a>
+      <div class="infinite-scroll"><span class="text">Infinite Scroll</span>
+        <label class="switch">
+          <input checked="" type="checkbox">
+          <span class="sliders round"></span>
+        </label>
+      </div>
+      <div class="aryafontsrecentlist">
+        <div class="aryafonts"><span>Recently Used</span>
+          <p class="cuteText1">★` 🎀 𝒫𝓇𝑒𝓋𝒾𝑒𝓌 🎀 `★</p>
+        </div>
+        <div class="aryafonts"><span>Recently Used</span>
+          <p class="cuteText2">🐳 ⋆ 🐳 🎀 𝒫𝓇𝑒𝓋𝒾𝑒𝓌 🎀 🐳 ⋆ 🐳</p>
+        </div>
+        <div class="aryafonts"><span>Recently Used</span>
+          <p class="cuteText1">★` 🎀 𝒫𝓇𝑒𝓋𝒾𝑒𝓌 🎀 `★</p>
+        </div>
+
+
+
+      </div>
+
+      <div class="ads">
+        <!-- nickfinder 2 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3643058943427176"
+          data-ad-slot="2565205814" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div class="aryafontsmain">
+        <div class="aryafontslist">
+
+          <h2>Crazy</h2>
+          <div class="aryafonts"><span>Crazy</span>
+            <p class="fullCrazy1">😝🐤 ᑎ𝒾𝒸кηⒶмε ♢💝</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Crazy</span>
+            <p class="fullCrazy2">💜💗 ＮƗĆк𝓷ⓐ爪€ 👽😳</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+
+          <div class="aryafonts"><span>Crazy with Florish Symbols</span>
+            <p class="crazyWithFlourishOrSymbols3">🍬😎 𝓃ι𝐜ⓚ𝓷α𝕄ᗴ 👻🐒</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Crazy with Florish Symbols</span>
+            <p class="crazyWithFlourishOrSymbols4">✎ (❁ᴗ͈ˬᴗ͈) ༉‧ ｎ𝐈𝔠кη𝔞๓乇 ♡*.✧</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+
+        </div>
+        <div class="aryafontslist">
+          <h2>New Added</h2>
+          <div class="aryafonts"><span>Super Script (Small)</span>
+            <p class="superscriptCharMap">ᴺⁱᶜᵏⁿᵃᵐᵉ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Sub Script (Small)</span>
+            <p class="subscriptCharMap">Nᵢ𝚌𝓴𝚗ₐᗰₑ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Luni Tool Stiny</span>
+            <p class="lunitoolstinyencode">ɴɪᴄᴋɴᴀᴍᴇ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Luni creepify</span>
+            <p class="lunicreepify" style="padding-top: 5px; padding-bottom: 5px;">
+              N̶͉̹̲̞̳̍̊͂͝͠ḭ̷̮͈̖͇̗̝͍̓́ç̷̯̱̳̹͇̟̟̎͊͝k̵̘̫̜̝̯̓̃̎͗͑̈́̿̒͛͘n̴̨̡̧̪̦̤̗̮͓̿̽̈̋͝ą̶͖͕̣̻̱̬̎͐͜͝m̵̡̢̛̱͚̯͚̠̫̽́͘ë̷͈̪̰̃̐
+            </p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Gamer 2</span>
+            <p class="pubggame1">꧁༒☬𝓝𝓲𝓬𝓴𝓷𝓪𝓶𝓮☬༒꧂</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Gamer 3</span>
+            <p class="pubggame2">꧁༺ռɨƈӄռǟʍɛ༻꧂</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Gamer 4</span>
+            <p class="pubggame3">꧁𓊈𒆜🅽🅸🅲🅺🅽🅰🅼🅴𒆜𓊉꧂</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+
+          <div class="aryafonts"><span>Bricks</span>
+            <p class="bricks">▀▄▀▄▀▄🄽🄸🄲🄺🄽🄰🄼🄴▀▄▀▄▀▄</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>BIG Rus</span>
+            <p class="bigrus">█▓▒&shy;░⡷⠂ИICҜИДMΞ⠐⢾░▒▓█</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+
+          <div class="ads">
+            <!-- nickfinder 2 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3643058943427176"
+              data-ad-slot="2565205814" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          <h2>Common Fancy Nick Name</h2>
+          <div class="aryafonts"><span>Old English</span>
+            <p class="oldEnglishCharMap">𝔑𝔦𝔠𝔨𝔫𝔞𝔪𝔢</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Medieval</span>
+            <p class="medievalCharMap">𝕹𝖎𝖈𝖐𝖓𝖆𝖒𝖊</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Cursive</span>
+            <p class="cursiveCharMap">𝓝𝓲𝓬𝓴𝓷𝓪𝓶𝓮</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Scriptify</span>
+            <p class="scriptify">𝒩𝒾𝒸𝓀𝓃𝒶𝓂𝑒</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Double Struck</span>
+            <p class="doubleStruckCharMap">ℕ𝕚𝕔𝕜𝕟𝕒𝕞𝕖</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Italic</span>
+            <p class="italicCharMap">𝘕𝘪𝘤𝘬𝘯𝘢𝘮𝘦</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Bold Italic</span>
+            <p class="boldItalicCharMap">𝙉𝙞𝙘𝙠𝙣𝙖𝙢𝙚</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Mono Space</span>
+            <p class="monospaceCharMap">𝙽𝚒𝚌𝚔𝚗𝚊𝚖𝚎</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Lunitools bubbles</span>
+            <p class="lunitoolsbubbles">Ⓝⓘⓒⓚⓝⓐⓜⓔ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Inverted Squares</span>
+            <p class="invertedSquaresCharMap">🅽🅸🅲🅺🅽🅰🅼🅴</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Fat Text</span>
+            <p class="result result-s7">ᑎᎥᑕᛕᑎᗩᗰᗴ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>WideText</span>
+            <p class="wideTextCharMap">Ｎｉｃｋｎａｍｅ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Bold</span>
+            <p class="boldCharMap">𝐍𝐢𝐜𝐤𝐧𝐚𝐦𝐞</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Luni Tools Flip</span>
+            <p class="lunitoolsflipencode">ǝɯɐuʞɔıN</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Reverse Mirror</span>
+            <p class="result result-s4">uᴉɔʞuɐɯǝ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Squares</span>
+            <p class="squaresCharMap">🄽🄸🄲🄺🄽🄰🄼🄴</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+          <div class="aryafonts"><span>Luni Tools Mirror</span>
+            <p class="lunitoolsmirrorencode">ɘmɒᴎʞɔiͶ</p>
+            <button class="flourishit">⋆˙⟡ <br>Deco</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="page-load-status" style="display: block;">
+        <div class="aload infinite-scroll-request" style="display: block;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="infinite-scroll-last" style="display: none;">ღƪ(ˆ◡ˆ)ʃ♡ That's all cool Fancy Nick Names we have
+          ♡ƪ(ˆ◡ˆ)ʃ♪</p>
+        <p class="infinite-scroll-error" style="display: none;">Error Contact <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0a8a1a3aba5b2b3a1a9b4a1aea480a7ada1a9aceea3afad">[email&#160;protected]</a></p>
+      </div>
+      <p class="aryapage">
+        <a class="aryapage-next" href="/cute.html">Next page</a>
+      </p>
+
+      <div class="ads">
+        <!-- nickfinder 2 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3643058943427176"
+          data-ad-slot="2565205814" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+    </div>
+
+    <div class="cats">
+      <div class="bookmarks">
+        <a href="cute.html">Cute</a>
+        <a href="symbolic.html">Symbolic</a>
+        <a href="small.html">Small</a>
+        <a href="lines.html">Lines</a>
+        <a href="squiggle.html">Squiggle</a>
+        <a href="ugly.html">Ugly</a>
+        <a href="weird.html">Weird</a>
+        <a href="joiner.html">Joiner</a>
+        <a href="box.html">Box</a>
+        <a href="stardecorated.html">Star decorated</a>
+        <a href="heartdecorated.html">Heart decorated</a>
+        <a href="emoticon.html">Emoticon</a>
+        <a href="thankyou.html">Thankyou</a>
+        <a href="sad.html">Sad</a>
+        <a href="asian.html">Asian</a>
+        <a href="random.html">Random</a>
+      </div>
+    </div>
+    <div class="links">
+      <p style="text-transform: uppercase;">Other Tools</p>
+
+      <a target="_blank" href="https://www.conversordeletras.org/">Convers de letras</a>
+      <a target="_blank" href="https://www.dobcalculator.com/">DOB Calculator</a>
+
+      <a target="_blank" href="https://www.stylishtextgenerator.com/">Stylish Text</a>
+      <a target="_blank" href="https://www.igfonts.art/">IG Text Fonts</a>
+
+    </div>
+
+    <div id="flourishPopup" class="flourish-popup hidden">
+      <div class="popup-box">
+        <div class="popup-header">
+          <h3>Flourish Decorate Font</h3>
+
+          <button class="close-popup">✕</button>
+
+        </div>
+        <div class="select-flourish">
+          <label for="flourishSelect">Select Options:</label>
+          <select id="flourishSelect"></select>
+        </div>
+        <div id="flourishList" class="aryafontslist"></div>
+        <div class="flourishit"><button id="flourishRegenerate" title="Regenerate all">🔄 Regenerate It</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="phpdadax.js?ver=9.5"></script>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G04DPVPBFX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-G04DPVPBFX');
+  </script>
+
+  <footer>
+    <h1>NickFinder ⚡ 😍 𝐹𝒶𝓃𝒸𝓎 & 𝕊𝕥𝕪𝕝𝕚𝕤𝕙 Ⓣⓔⓧⓣ Nick Names ✅</h1>
+    <h2>ℕ𝕚𝕔𝕜 𝔽𝕚𝕟𝕕𝕖𝕣 𓂀 😍 convert normal TEXT nicknames into Ⓕⓐⓝⓒⓨ looking text for PUBG and Free Fire games
+      with 𝕮𝖔𝖕𝖞 𝖆𝖓𝖉 𝕻𝖆𝖘𝖙𝖊.</h2>
+
+    <div class="container" style="text-align:left">
+      <a
+        href="https://1.bp.blogspot.com/-TB26BU_2TP8/YHAO-Lr-SPI/AAAAAAAAGHo/JjYaujaJ7RYzyWiyqOXnKudvBJAKng8CwCLcBGAsYHQ/s16000/nickfinder.png">
+        <img style="max-width:800px" loading="lazy" alt="NickFinder main image" title="NickFinder main image"
+          src="https://1.bp.blogspot.com/-TB26BU_2TP8/YHAO-Lr-SPI/AAAAAAAAGHo/JjYaujaJ7RYzyWiyqOXnKudvBJAKng8CwCLcBGAsYHQ/s16000/nickfinder.png"></a>
+
+      <p>Welcome on one of the best fancy nick name generator website, this website convert your normal text name into
+        fancy looking stylish text. These fancy nick name can be used in social media and gaming user name.
+        You can use as Gaming user name and avatar on games like PUBG and free fire etc.</p>
+
+      <h2>Can you use this nickfinder on PUBG, Free Fire or any other game?</h2>
+      <p>Of course we can use, most of our visitors are gamers they come here to generate fancy stylish looking gaming
+        user name which can be used in gaming platform like pubg, free fire, Call of Duty, Fortnite, Garena Free Fire,
+        Hopeless Land: Fight for Survival etc</p>
+      <p>unicode ANSI code text name.</p>
+
+      <h2>Can I use Nickname finder on Instagram?</h2>
+      <p>Yes hundred percent you can use after gaming user the second most popular categories in instagram users they
+        come to our site to generate fancy stylish text fonts which they use on there Instagram bio, Instagram captions
+        etc</p>
+      <h2>Can we use Nickfinder.net in other social media like Facebook, Twitter, YouTube, WhatsApp etc</h2>
+      <p>Yes sure you can use on Facebook, Twitter, Instagram, YouTube, WhatsApp and whatever social media platform you
+        name it is going to support it because this is just a text. So which social media is support text is going to
+        support this website generated as text like if you want to use on Facebook you can use as a Facebook comment
+        system as a sharing some post. if you want to use on Twitter we can use as a twitter bio, Twitter profile name
+        or as YouTube comments.</p>
+      <h2>How to Use this Fancy Nick name generator website?</h2>
+      <img style="max-width:600px" loading="lazy" alt="how to use this Nick name generator"
+        src="https://1.bp.blogspot.com/-kuB_Sng1fcc/YMgu5HcXyBI/AAAAAAAAG0Q/oBqaOzfIcWQPa84a39Mx0hw_AdcLRpYAQCLcBGAsYHQ/s16000/NickFinder%2Bhow%2Bto%2Buse.jpg">
+
+
+      <h2>Nickname Finder Tool-The Amazing Hacks to Create a Stylish Nickname</h2>
+
+      <p>Do you want to write your social media profile nickname in a fancy style? Try all the amazing hacks of writing
+        stylish nicknames with the <b>Nickname finder</b> tool. The website offers a free tool to write the nicknames
+        for social media platforms and another website for free. </p>
+      <p>There is no limit to the nicknames styles to try; you can access the user names for the games such as free fire
+        and PubG. Writing a stylish name with the nickname finder gives numerous reasons to stare at the profile and
+        give you a unique way of expressing your profile. </p>
+      <p><b>The nickname fancy text</b> creator is a versatile tool that helps write fancy text and names, which you can
+        post on your social media profiles and another website. For example, people use fancy text on their gaming
+        platforms like Call of Duty, Free Fire, PubG, Fortnite, Hopeless Land" Fight for Survival, and Garena Free Fire.
+      </p>
+      <p>With this software, you can give your text an amazing and appealing look at the same time. Moreover, it doesn't
+        matter on which social media platform you want to use this fancy text; you are free to create the text and
+        designs of any style and any type. </p>
+      <p>The platform gives you endless options to choose from, and all this you get for free. Yes, you don't need to
+        pay any penny to access the tool. So, what are you waiting for? Don't get bored of sharing the simples; get
+        access to the tool and start creating the magic of the words. </p>
+
+      <h2>About The Nickname Nickfinder</h2>
+      <p>Nickname Nickfinder is an online website of the fancy text generator that allows you to write the names fancy.
+        In addition, there are a plethora of options and customization tools available that help to generate fancy and
+        stylish text by adding different and unique characters. </p>
+      <p>Whether you want to add emoticons to the text name or just write stylish font style names, the tool gives you
+        complete freedom to access the tool and show your creativity. The tool is free to access and easy to use due to
+        its clean interface, which is why users can easily use the tool to create any fancy text. </p>
+      <p>The format is pretty simple and straightforward, create the text, check the options, customize as per your
+        need, copy the text and paste it anywhere you want. Be it social media, gaming platforms, and other websites,
+        you are free to utilize the website and explore new ways to write the name.</p>
+
+      <h2>Why Use the Nickfinder Fancy Text?</h2>
+      <p>Today, social media platforms are full of influencers who try different tactics to make their profile visibly
+        excellent and eye-captivating. But, no matter how impressive you write quotes and stories on your social media
+        platform, it is worthless if you don't get conversions and followers. </p>
+      <p>So, let’s try the Nickfinder fancy text that helps to write the names creatively. The nickname writer tool is
+        helpful in uniquely writing the text and allows you to write a stylish bio. Want to see how your name looks when
+        you try this nickname finder tool? </p>
+      <p>Let us assume an example. First,write the name like this <b>"Ninja Gamer."</b> Then, type the text on the
+        website dialogue box, start searching for the text you want, copy it, and paste it on your social media profile.
+        The process is simple, and anyone can use this tool easily. </p>
+      Let us show you what the text looks like after using the tool.
+      <ul>
+        <li>(人◕‿◕) ℕ𝕚𝕟𝕛𝕒 𝔾𝕒𝕞𝕖𝕣 (•◡•)</li>
+        <li>ミ★ 𝘕𝘪𝘯𝘫𝘢 𝘎𝘢𝘮𝘦𝘳 ★彡</li>
+        <li>ıllıllı⭐🌟 N͙i͙n͙j͙a͙ G͙a͙m͙e͙r͙ 🌟⭐ıllıllı</li>
+        <li>(☝◞‸◟)☞ 𝙽𝚒𝚗𝚓𝚊 𝙶𝚊𝚖𝚎𝚛</li>
+        <li>☞ó ͜つò☞ 𝓝𝓲𝓷𝓳𝓪 𝓖𝓪𝓶𝓮𝓻</li>
+      </ul>
+      <p>Isn't it looking amazing? We have tried a few of the options to show you how the text looks like. There are
+        hundreds of options available to try. You can create your own magical way of creating unique text and share it
+        on your social media platforms. Don't forget to try different font patterns and designs to make your bio more
+        enhancing. </p>
+
+      <h2>How to Add Emoticons in the Fancy Name Text?</h2>
+      Do you want to give your text an impressive look by adding different emoticons? Here is how you can try the hack.
+      <ul>
+        <li>Visit the website and go to the nickname finder text bar</li>
+        <li>Now type the text name in which you want to add the emoticons. Below there will be different options given.
+          You can choose any one of the options to give your text a unique look with emoticons. </li>
+        <li>Go to the emoticons section and choose from different options. </li>
+        <li>Once you select the option, copy the text and paste it anywhere. </li>
+      </ul>
+      For example, we have created a fancy name text word and tried the emoticons by using the emoticons options.
+      <ul>
+        <li>(人◕‿◕) 𝔽𝕒𝕟𝕔𝕪 𝕟𝕒𝕞𝕖 𝕥𝕖𝕩𝕥 (•◡•)</li>
+        <li>☞ó ͜つò☞ 𝓕𝓪𝓷𝓬𝔂 𝓷𝓪𝓶𝓮 𝓽𝓮𝔁𝓽</li>
+        <li>彡 (✿╹◡╹) 𝘍𝘢𝘯𝘤𝘺 𝘯𝘢𝘮𝘦 𝘵𝘦𝘹𝘵 (｀∀´) Ψ</li>
+        <li>+｡: ﾟヽ (*´∀) ﾉﾟ𝓕𝓪𝓷𝓬𝔂 𝓷𝓪𝓶𝓮 𝓽𝓮𝔁𝓽.: ｡+ﾟ</li>
+      </ul>
+      <p>We used these cute emoticons to create fancy nickname text with the help of the tool. Similarly, you can
+        utilize the tool to create different text styles and designs. Emoticons can be a fun way of creating a unique
+        text than others. This gives you a creative hack to catch the followers on social media platforms. </p>
+      <p>Want to increase the size of the text? This tool can easily help you to change the size of the text that you
+        want. There is a slide bar given in the top right corner below the text bar. After selecting the test, you can
+        move the bar and change the size of the fonts easily.</p>
+      ☞ó ͜つò☞ 𝓕𝓪𝓷𝓬𝔂 𝓷𝓪𝓶𝓮 𝓽𝓮𝔁𝓽<br>
+      (づ｡◕‿‿◕｡) づ ƒαη¢у ηαмє тєχт ٩(˘◡˘)۶
+      <p>Like we have done with the text. You can increase or decrease the size of the text as it suits your needs. In
+        this way, you can easily choose the text size you want to copy and paste on your profile. Now you can be bolder
+        than before and try amazing ideas to write fancy names by using this creative tool. </p>
+      <p>There are many more fun elements to try and add to your text to give it a more impressive and exciting look.
+        You are free to access the tool and try creative ideas to create fun elements and flaunt them on social media
+        platforms. </p>
+
+      <h2>Star Decorated Nickname Text</h2>
+      <p>Want to add star shines with your nickname to give it an enchanting look? Use Nickfinder's fancy text tool that
+        helps you to write the fancy nicknames with text and star. On-site, you get to explore different patterns and
+        designs, which you can copy directly and paste on any social media platform. </p>
+      <p>Finding the star icons and designs is straightforward. To get the star designed text, you need to go to the
+        website and write the nickname you want to convert into the fancy text name. Then, find the star-decorated
+        symbol given below. Click on the symbols and start finding the desired text. </p>
+      <p>Once you choose the ideal text, just click on the text, and it will be copied. Now, it is ready to paste
+        anywhere. There are hundreds of options available which you can copy and paste on your social media profile.
+        Experiment with different names and designs to make them super impressive. </p>
+      <p>For example, we wrote the nickname "Game Changer." Followed the step and tried different styles given below:
+      </p>
+      <ul>
+        <li>ミ★ 𝘎𝘢𝘮𝘦 𝘊𝘩𝘢𝘯𝘨𝘦𝘳 ★彡</li>
+        <li>╰•★★ ɠąɱɛ ƈɧąŋɠɛཞ ★★•╯</li>
+        <li>`✵•.¸,✵°✵.｡. ✰ 𝔾𝕒𝕞𝕖 ℂ𝕙𝕒𝕟𝕘𝕖𝕣 ✰.｡. ✵°✵,¸.•✵´</li>
+        <li>ıllıllı⭐🌟 G͙a͙m͙e͙ C͙h͙a͙n͙g͙e͙r͙ 🌟⭐ıllıllı</li>
+        <li>·.★·.·´¯`·.·★ 🅶🅰🅼🅴 🅲🅷🅰🅽🅶🅴🆁 ★·.·´¯`·.·★.·</li>
+      </ul>
+      <p>These are a few of the stylish designs and fancy text styles we have tried to give a text an enhancing look. In
+        a similar way, you can also try different styles to make your name stylish and paste it on social media
+        platforms. There are so many options that you can try and experiment with. </p>
+
+      <h2>Create PUBG Stylish Name with Nickname Finder</h2>
+      <p>Gamers always love to write nicknames on their gaming platform and create a unique text for their profile to
+        enhance the look and catch the attention of others. One of the best ways is to write the PUBG Stylish name with
+        the help of the Nickfinder PUBG.</p>
+      <p>With the help of the tool, you can create different style names and text designs that look impressive on the
+        profile. Be it the gaming platform, social media platform, and others, you can copy and paste any name style on
+        the platform. </p>
+      <p>Writing a stylish name isn't difficult. You have to follow the steps given above and write an impressive name.
+        For gaming personalities, a stylish decorative name is always preferable. </p>
+      <ul>
+        <li>ミミ◦❧◦°˚°◦.¸¸◦°´❤*•.¸♥ 𝓟𝓤𝓑𝓖 𝓢𝓽𝓪𝓻 𝓬𝓻𝓪𝓬𝓴𝓮𝓻 ♥¸.•*❤´°◦¸¸.◦°˚°◦☙◦彡彡</li>
+        <li>☞ó ͜つò☞ 𝓟𝓤𝓑𝓖 𝓢𝓽𝓪𝓻 𝓬𝓻𝓪𝓬𝓴𝓮𝓻</li>
+        <li>·.★·.·´¯`·.·★ 🅿🆄🅱🅶 🆂🆃🅰🆁 🅲🆁🅰🅲🅺🅴🆁 ★·.·´¯`·.·★.·</li>
+        <li>+｡: ﾟヽ (*´∀) ﾉﾟ𝓟𝓤𝓑𝓖 𝓢𝓽𝓪𝓻 𝓬𝓻𝓪𝓬𝓴𝓮𝓻.: ｡+ﾟ</li>
+        <li>╰•★★ ℘ųცɠ ʂɬąཞ ƈཞąƈƙɛཞ ★★•╯</li>
+        <li>¸.·✩·.¸¸.·¯⍣✩ ⓅⓊⒷⒼ Ⓢⓣⓐⓡ ⓒⓡⓐⓒⓚⓔⓡ ✩⍣¯·.¸¸.·✩·.¸</li>
+      </ul>
+      <p>If you write a gaming name by adding these elements, make your nickname text more enhanced. There are endless
+        options to try, so you never get bored of trying. So, what are you waiting for? Just go to the website, search
+        for the different categories of nicknames, and start writing fancy text names to make your profile unique from
+        others and give readers a reason to stare at your profile. </p>
+
+      <h2>Add Cute Element in Your Nickname Text</h2>
+      <p>Adding cute elements with your text and nickname helps to catch the attention of the followers easily. Writing
+        the plain text may look boring and doesn't look as appealing as the fancy nickname with the cute elements.
+        However, adding elements is a tad challenging.</p>
+      <p>Thanks to the Nickname Nickfinder tool that makes the process easier. This is a free tool, and anyone can
+        access it without going through the signup process. If you wish to add heart signs, arrows, iconic symbols, and
+        anything, just type the desired text into the dialogue box given. </p>
+      <p>There are a plethora of options given like start decorated, emoticons, cute elements, fun elements, and many
+        more. In addition, you can choose any one of the signs and symbols to add to your text. </p>
+      <p>Click on the given text, and you get a different text format with dazzling elements. Select anyone and copy the
+        selected text by clicking on it. Now it is ready to use on any platform. </p>
+      <ul>
+        <li>🍧 ⋆ 🍰 🎀 𝒩𝒾𝒸𝓀𝓃𝒶𝓂𝑒 𝒩𝒾𝒸𝓀𝒻𝒾𝓃𝒹𝑒𝓇 𝒟𝒶𝓏𝓏𝓁𝒾𝓃𝑔 𝒮𝓉𝒶𝓇 🎀 🍰 ⋆ 🍧</li>
+        <li>: 🎀 𝒩𝒾𝒸𝓀𝓃𝒶𝓂𝑒 𝒩𝒾𝒸𝓀𝒻𝒾𝓃𝒹𝑒𝓇 𝒟𝒶𝓏𝓏𝓁𝒾𝓃𝑔 𝒮𝓉𝒶𝓇 🎀 :</li>
+        <li>🐸 🎀 𝒩𝒾𝒸𝓀𝓃𝒶𝓂𝑒 𝒩𝒾𝒸𝓀𝒻𝒾𝓃𝒹𝑒𝓇 𝒟𝒶𝓏𝓏𝓁𝒾𝓃𝑔 𝒮𝓉𝒶𝓇 🎀 🐸</li>
+        <li>💘🍮 ⓝι𝒸𝔨ภ𝒶𝓶ᵉ ᑎᶤｃᵏᖴᶤ𝐧∂Ｅℝ ๔𝓪zｚˡⒾภᵍ 𝓼тⒶ𝐫 ✌♠</li>
+        <li>☺♖ ｎι¢𝕜ｎ𝒶ⓜ乇 ภιςᛕ𝐅Ⓘℕ𝕕Ⓔℝ ｄ𝐚zzˡ𝐈𝐧𝐠 𝓈Ｔαℝ 💣🐸</li>
+      </ul>
+      <p>So, these are some of the best cute elements that we tried to make the nickname impressive. Isn't it more
+        appealing than random boring plain text? Use the website to make your text more enhanced with unique elements.
+        This website offers endless tools and features that help you to make your nickname text more impressive than
+        others. </p>
+
+      <h2>Share Fancy Nickname with the Heart Style Symbols</h2>
+      <p>Heart symbols, emojis, and other icons always create a spark that plain text can't. But do you feel the heart
+        icons given in your chat aren't enough to add in the fancy nickname? If so, then access the Nickname Nickfinder
+        tool. This is a free website that allows you to create unique names by adding different symbols. </p>
+      <p>Heart symbols may be common but always validate your profile with a cute element that everybody likes to have.
+        Wondering how to do that magic of words with fancy text? Let's do it this way. </p>
+      <ul>
+        <li>Go to the Nickname Nickfinder website. </li>
+        <li> Here you get the dialogue box where you can write the text or the nickname you want to copy. </li>
+        <li> Now scroll below and search for the text enhancer tools. There are so many weird, cute, sad, star
+          decorated, heart, and other options. </li>
+        <li> To add the heart style symbols, click on the heart style icon</li>
+        <li>Here you will get endless options to choose from. </li>
+        <li>Select the best heart style nickname and copy it</li>
+        <li>Now, paste it on any platform or website </li>
+      </ul>
+      Some of the examples of the heart style nickname text are as follows:
+      <ul>
+        <li>◦•●❤♡ Çµ†ê Lï††lê þrïñ¢ê§§ ♡❤●•◦</li>
+        <li>ミミ◦❧◦°˚°◦.¸¸◦°´❤*•. ¸♥ 𝓒𝓾𝓽𝓮 𝓛𝓲𝓽𝓽𝓵𝓮 𝓟𝓻𝓲𝓷𝓬𝓮𝓼𝓼 ♥¸. •*❤´°◦¸¸. ◦°˚°◦☙◦彡彡</li>
+        <li>(人◕‿◕) ℂ𝕦𝕥𝕖 𝕃𝕚𝕥𝕥𝕝𝕖 ℙ𝕣𝕚𝕟𝕔𝕖𝕤𝕤 (•◡•)</li>
+        <li>＼(´∀｀●)／C♥u♥t♥e♥ ♥L♥ I ♥t♥t♥l♥e♥ ♥P♥r♥ I ♥n♥c♥e♥s♥s!</li>
+        <li>(oꆤ︵ꆤo) 𝘊𝘶𝘵𝘦 𝘓𝘪𝘵𝘵𝘭𝘦 𝘗𝘳𝘪𝘯𝘤𝘦𝘴𝘴 ●︿●</li>
+      </ul>
+      <p>We have selected the text "Cute little Princess," and tried to give the text an impressive and eye-catching
+        look by using this tool. Likewise, if you want to add some fun elements and want to express your nickname
+        differently on your profile, visit the website and try different hacks. </p>
+      <p>The website is pretty simple and easy to use. Anyone can easily find a way to write the text and symbols in an
+        impressive way. Moreover, you don't need to pay any fee to use any of the styles. Similarly, this website also
+        offers impressive designs and lucrative designs that captivate the reader's attention quickly. </p>
+      <p>Even if you want to write an amazing bio, you can visit the website and access the text enhancer tools. This
+        way, you can write the best bio by adding different elements and giving your text an appealing look. </p>
+
+      <h2>Get a Stylish Name for Instagram</h2>
+      <p>Instagram is getting bigger and better than before. The users share many images, videos, and quotes on this
+        platform every single second. Out of billions of impressive posts and profiles, how would you catch the
+        attention of the followers? </p>
+      <p>By creating unique and enticing content. Okay! But how do you do that? If you don't know how to write the best
+        website content and create magic with the words and symbols, then this is the website that you need to visit.
+        Nickname Nickfinder provides you with an amazing way of writing engaging content by adding different textures,
+        styles, emojis, boxes, weird text, and other things. </p>
+      <p>To write the nickname for an Instagram profile, you have to follow the same format like you do with other
+        elements. For example, if you want to add some boxes with your text or write box-style text, visit the website,
+        use fun elements, and create the best text.</p>
+
+      Instagram is the king of content.
+      Let's go to the website to experiment with different designs.
+      <ul>
+        <li>ᵢ𝚗𝘴𝚝ₐgᵣₐᗰ ᵢ𝘴 𝚝𝓱ₑ 𝓴ᵢ𝚗g ₒf ᵥᵢ𝘴ᵤₐᄂ 𝚌ₒ𝚗𝚝ₑ𝚗𝚝</li>
+        <li>𝙸̷𝚗̷𝚜̷𝚝̷𝚊̷𝚐̷𝚛̷𝚊̷𝚖̷ 𝚒̷𝚜̷ 𝚝̷𝚑̷𝚎̷ 𝚔̷𝚒̷𝚗̷𝚐̷ 𝚘̷𝚏̷ 𝚟̷𝚒̷𝚜̷𝚞̷𝚊̷𝚕̷ 𝚌̷𝚘̷𝚗̷𝚝̷𝚎̷𝚗̷𝚝̷
+        </li>
+        <li>I̳n̳s̳t̳a̳g̳r̳a̳m̳ ̳i̳s̳ ̳t̳h̳e̳ ̳k̳i̳n̳g̳ ̳o̳f̳ ̳v̳i̳s̳u̳a̳l̳ ̳c̳o̳n̳t̳e̳n̳t̳</li>
+        <li>꧁•⊹٭𝙸𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 𝚒𝚜 𝚝𝚑𝚎 𝚔𝚒𝚗𝚐 𝚘𝚏 𝚟𝚒𝚜𝚞𝚊𝚕 𝚌𝚘𝚗𝚝𝚎𝚗𝚝٭⊹•꧂</li>
+        <li>ミ★ 𝘐𝘯𝘴𝘵𝘢𝘨𝘳𝘢𝘮 𝘪𝘴 𝘵𝘩𝘦 𝘬𝘪𝘯𝘨 𝘰𝘧 𝘷𝘪𝘴𝘶𝘢𝘭 𝘤𝘰𝘯𝘵𝘦𝘯𝘵 ★彡</li>
+        <li>`✵•.¸,✵°✵.｡.✰ 𝕀𝕟𝕤𝕥𝕒𝕘𝕣𝕒𝕞 𝕚𝕤 𝕥𝕙𝕖 𝕜𝕚𝕟𝕘 𝕠𝕗 𝕧𝕚𝕤𝕦𝕒𝕝 𝕔𝕠𝕟𝕥𝕖𝕟𝕥 ✰.｡.✵°✵,¸.•✵´</li>
+        <li>ミミ◦❧◦°˚°◦.¸¸◦°´❤*•.¸♥ 𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶 𝓲𝓼 𝓽𝓱𝓮 𝓴𝓲𝓷𝓰 𝓸𝓯 𝓿𝓲𝓼𝓾𝓪𝓵 𝓬𝓸𝓷𝓽𝓮𝓷𝓽
+          ♥¸.•*❤´°◦¸¸.◦°˚°◦☙◦彡彡</li>
+        <li>☞ó ͜つò☞ 𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶 𝓲𝓼 𝓽𝓱𝓮 𝓴𝓲𝓷𝓰 𝓸𝓯 𝓿𝓲𝓼𝓾𝓪𝓵 𝓬𝓸𝓷𝓽𝓮𝓷𝓽</li>
+      </ul>
+      <p>Are they looking impressive to you? Well, we just tried a different form of symbols to give the content a
+        unique way. Similarly, you can open the channels of thoughts and try amazing creative elements and design the
+        content. You can even add Lamao faces to create the best text. </p>
+
+      <h2>Cool Symbols to Mix Up with Nickname and Make Them Expressive</h2>
+      <p>Symbols are always an attractive way to create the best nickname profiles. This allows you to write names,
+        bios, and other things in an enticing way. So, if you want to add more fun elements and are looking for the best
+        way to add creativity to your text, this is the best website to try amazing hacks. </p>
+      <p>You get a cool symbol tool that allows you to show your creativity and add these symbols to the text on this
+        website. Some of the examples of the iconic characters are as follows: </p>
+      <ul>
+        <li>・❥・</li>
+        <li>*ੈ✩‧₊˚</li>
+        <li>˚₊· ͟͟͞͞➳❥</li>
+        <li>≪•◦ ❈ ◦•≫</li>
+        <li>▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</li>
+        <li>❤️️</li>
+        <li>✿</li>
+      </ul>
+      <p>These are a few of the symbols that we have tried. But that's not the only option available here. There are
+        triangle symbols, Latin-style alphabet symbols, and other symbols available which you can use to create the best
+        profiles. Adding these style symbols with your text makes your profile amazing and super enhancing.</p>
+      <p>There are many options to try, from technical symbols to line symbols and from square to fraction symbols.
+        Adding these elements with your text gives them an attractive look that people love to gaze on. You can use
+        these elements for creating the best nickname and posting on social media platforms. </p>
+      <p>To add these symbols, go to the website and look for the cool symbol tool. Then, explore different symbols
+        present on this platform. Once you choose different symbols, copy them by clicking on the symbols, and it is
+        ready to paste anywhere. </p>
+
+      <h2>Lamao Faces to Make Your Nickname More Impressive</h2>
+      <p>Lamao faces are the cutest yet funniest way of making your nickname more interesting and captivating. To write
+        bio and name interestingly, you can add some Lamao faces and emojis and combine them with different symbols. To
+        get all the elements, you can visit the website and search for unique symbols. </p>
+      <p>Moreover, you can go to the Lamao face make tool to add funny faces and give your text an impressive look. By
+        adding all these elements, you will be able to enhance the visibility of your profile and give your follower a
+        reason to stare at your profile. </p>
+      <p>For instance, let's write a unique text in the given text box and search for the different Lamao faces. Choose
+        the style that you want to add to the text. There are different elements that you can add to your text to make
+        it appealing than others. </p>
+      <ul>
+        <li>(☝◞‸◟)☞ 𝚂𝚝𝚢𝚕𝚒𝚜𝚑 𝙸𝚌𝚘𝚗 𝚝𝚘 𝙰𝚍𝚍 𝙸𝚗 𝚈𝚘𝚞𝚛 𝙿𝚛𝚘𝚏𝚒𝚕𝚎</li>
+        <li>彡(✿╹◡╹) 𝘚𝘵𝘺𝘭𝘪𝘴𝘩 𝘐𝘤𝘰𝘯 𝘵𝘰 𝘈𝘥𝘥 𝘐𝘯 𝘠𝘰𝘶𝘳 𝘗𝘳𝘰𝘧𝘪𝘭𝘦 (｀∀´)Ψ</li>
+        <li>☞ó ͜つò☞ 𝓢𝓽𝔂𝓵𝓲𝓼𝓱 𝓘𝓬𝓸𝓷 𝓽𝓸 𝓐𝓭𝓭 𝓘𝓷 𝓨𝓸𝓾𝓻 𝓟𝓻𝓸𝓯𝓲𝓵𝓮</li>
+        <li>(づ｡◕‿‿◕｡)づ ѕтуℓιѕн ι¢ση тσ α∂∂ ιη уσυя ρяσƒιℓє ٩(˘◡˘)۶</li>
+        <li>🌘‿🌘 ⧼S̼⧽⧼t̼⧽⧼y̼⧽⧼l̼⧽⧼i̼⧽⧼s̼⧽⧼h̼⧽ ⧼I̼⧽⧼c̼⧽⧼o̼⧽⧼n̼⧽ ⧼t̼⧽⧼o̼⧽ ⧼A̼⧽⧼d̼⧽⧼d̼⧽ ⧼I̼⧽⧼n̼⧽ ⧼Y̼⧽⧼o̼⧽⧼u̼⧽⧼r̼⧽
+          ⧼P̼⧽⧼r̼⧽⧼o̼⧽⧼f̼⧽⧼i̼⧽⧼l̼⧽⧼e̼⧽ (✿ヘᴥヘ)</li>
+        <li>(^▽^) ₴₮ɎⱠł₴Ⱨ ł₵Ø₦ ₮Ø ₳ĐĐ ł₦ ɎØɄⱤ ₱ⱤØ₣łⱠɆ (✿^▽^)</li>
+      </ul>
+      <p>These are some of the best Lamao faces you can use to create the nickname and add on social media platforms.
+        There are many more styles and text designs available on this platform. You can directly copy and paste on
+        social media platforms. Some symbols are not available to copy on different websites, so check before you copy
+        and paste on the website. </p>
+
+      Some other Lamao faces which you can use are as follows:
+      <ul>
+        <li>☞ó ͜つò☞</li>
+        <li>(˵ ͡° ͜ʖ ͡°˵)</li>
+        <li>( ͡ʘ ͜ʖ ͡ʘ)</li>
+        <li>(•̀ᴗ•́) و ̑̑</li>
+        <li>(͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)</li>
+        <li>( ͡o ͜ʖ ͡o)</li>
+        <li>ಠ╭╮ಠ</li>
+        <li>ᕙ (▀̿̿Ĺ̯̿̿▀̿ ̿) ᕗ</li>
+      </ul>
+      <p>There are so many Lamao faces that you can use to create a unique profile bio and add with the text. These
+        Lamao faces are easy to copy and paste with your text. </p>
+      <p>So, you can easily use the Lenny faces anywhere and improve the visibility of your profile. Whether you want to
+        paste it on Instagram, Facebook, or Twitter, you can use it anywhere. </p>
+
+      <h2>Font Changer to Create Different Style Fonts</h2>
+      <p>Using fonts in different designs and styles can make your content and nickname stand out. If you want to make
+        your text look visibly impressive, then you can go to the website and access the font changer tool. Here you get
+        different styles and font designs to choose from.</p>
+      <p>You can copy and paste any desired style of the fonts on social media platforms directly. Moreover, you can
+        also customize the text styles and designs that suit your profile the most. </p>
+      <p>If you want to make it more impressive, then don't stop experimenting. You can explore endless tools to create
+        the best text profiles for your social media platform. </p>
+      <ul>
+        <li>𝒟𝒾𝒻𝒻𝑒𝓇𝑒𝓃𝓉 𝐹𝑜𝓃𝓉𝓈 𝓉𝑜 𝒶𝒹𝒹 𝑜𝓃 𝓈𝑜𝒸𝒾𝒶𝓁 𝓂𝑒𝒹𝒾𝒶 𝓅𝓁𝒶𝓉𝒻𝑜𝓇𝓂𝓈</li>
+        <li>𝔻𝕚𝕗𝕗𝕖𝕣𝕖𝕟𝕥 𝔽𝕠𝕟𝕥𝕤 𝕥𝕠 𝕒𝕕𝕕 𝕠𝕟 𝕤𝕠𝕔𝕚𝕒𝕝 𝕞𝕖𝕕𝕚𝕒 𝕡𝕝𝕒𝕥𝕗𝕠𝕣𝕞𝕤</li>
+        <li>𝒟𝒾𝒻𝒻𝑒𝓇𝑒𝓃𝓉 𝐹𝑜𝓃𝓉𝓈 𝓉𝑜 𝒶𝒹𝒹 𝑜𝓃 𝓈𝑜𝒸𝒾𝒶𝓁 𝓂𝑒𝒹𝒾𝒶 𝓅𝓁𝒶𝓉𝒻𝑜𝓇𝓂𝓈</li>
+        <li>𓂀 𝔻𝕚𝕗𝕗𝕖𝕣𝕖𝕟𝕥 𝔽𝕠𝕟𝕥𝕤 𝕥𝕠 𝕒𝕕𝕕 𝕠𝕟 𝕤𝕠𝕔𝕚𝕒𝕝 𝕞𝕖𝕕𝕚𝕒 𝕡𝕝𝕒𝕥𝕗𝕠𝕣𝕞𝕤 𓂀</li>
+        <li>꧁༺ɖɨʄʄɛʀɛռȶ ʄօռȶֆ ȶօ ǟɖɖ օռ ֆօƈɨǟʟ ʍɛɖɨǟ քʟǟȶʄօʀʍֆ༻꧂</li>
+        <li>𝕯𝖎𝖋𝖋𝖊𝖗𝖊𝖓𝖙 𝕱𝖔𝖓𝖙𝖘 𝖙𝖔 𝖆𝖉𝖉 𝖔𝖓 𝖘𝖔𝖈𝖎𝖆𝖑 𝖒𝖊𝖉𝖎𝖆 𝖕𝖑𝖆𝖙𝖋𝖔𝖗𝖒𝖘</li>
+        <li>꧁𓊈𒆜🅳🅸🅵🅵🅴🆁🅴🅽🆃 🅵🅾🅽🆃🆂 🆃🅾 🅰🅳🅳 🅾🅽 🆂🅾🅲🅸🅰🅻 🅼🅴🅳🅸🅰 🅿🅻🅰🆃🅵🅾🆁🅼🆂𒆜𓊉꧂</li>
+        <li>𝓓𝓲𝓯𝓯𝓮𝓻𝓮𝓷𝓽 𝓕𝓸𝓷𝓽𝓼 𝓽𝓸 𝓪𝓭𝓭 𝓸𝓷 𝓼𝓸𝓬𝓲𝓪𝓵 𝓶𝓮𝓭𝓲𝓪 𝓹𝓵𝓪𝓽𝓯𝓸𝓻𝓶𝓼</li>
+      </ul>
+      <p>These are some of the best font styles and designs which you can also try to create the fancy text for
+        Instagram bio and Facebook profile. Similarly, if you want to change the size of the font, you can do it easily
+        with the help of this text converter tool. </p>
+
+      <h2>Why Should You Use This Online Nickname Nickfinder Tool?</h2>
+      <p>Many people have the habit of writing different styled text to catch the attention of the followers and improve
+        their visibility. However, creating stylish fonts and nicknames is difficult with the regular style keyword.
+        Thanks to the online website and tools that help change the regular text into stylishly designed fronts. </p>
+      <p>Here you get different tools such as Fancy text converter, nickname finder, Lamao face generator, and many
+        more. These tools help create different text designs and styles that you can add to social media platforms. </p>
+      <p>Aside from this, you can access the stylish, cute, fancy, crazy, box, weird and other elements that can make
+        your text more impressive. In addition to this, the text and nicknames that you create by using the tools are
+        easy to copy and paste on social media platforms such as Snapchat, Instagram, Facebook, and many more. </p>
+      <p>You can combine different tools such as cool symbols, text creator, and Lamao face generator to make the text
+        visible and impressive at the same time. For example, the cool font generator tool and stylish converter can
+        make an excellent combination of fun elements and stylish fonts. </p>
+
+      <p>Whether you want to write in cursive format or want to add some star elements in the text, this tool helps
+        experiment with the text in so many ways. The best thing about the tool is that it is free to use. You don't
+        need to pay anything to access the tool. </p>
+      <p>There is a PUBG font generator that helps to create the best gaming profile. In addition, you can use the text
+        generator tool to make it more appealing. Likewise, you get an Italic font generator, online font generator,
+        gothic font generator, and other tools which are pretty useful in creating stylish text. </p>
+      <ul>
+        <li>☞ó ͜つò☞ 𝓒𝓻𝓮𝓪𝓽𝓮 𝓨𝓸𝓾𝓻 𝓞𝔀𝓷 𝓢𝓣𝔂𝓵𝓲𝓼𝓱 𝓐𝓷𝓭 𝓕𝓪𝓷𝓬𝔂 𝓢𝓣𝔂𝓵𝓮 𝓽𝓮𝔁𝓽</li>
+        <li>彡(✿╹◡╹) 𝘊𝘳𝘦𝘢𝘵𝘦 𝘠𝘰𝘶𝘳 𝘖𝘸𝘯 𝘚𝘛𝘺𝘭𝘪𝘴𝘩 𝘈𝘯𝘥 𝘍𝘢𝘯𝘤𝘺 𝘚𝘛𝘺𝘭𝘦 𝘵𝘦𝘹𝘵 (｀∀´)Ψ</li>
+        <li>Cɾҽαƚҽ Yσυɾ Oɯɳ STყʅιʂԋ Aɳԃ Fαɳƈყ STყʅҽ ƚҽxƚ</li>
+        <li>ƇƦЄƛƬЄ ƳƠƲƦ ƠƜƝ ƧƬƳԼƖƧӇ ƛƝƊ ƑƛƝƇƳ ƧƬƳԼЄ ƬЄҲƬ</li>
+        <li>૮૨εαƭε ყσµ૨ σωɳ รƭყℓเรɦ αɳ∂ ƒαɳ૮ყ รƭყℓε ƭεאƭ</li>
+        <li>ՇՐȝԹԵȝ ՎԾՄՐ ԾաՌ ՏԵՎʅɿՏɧ ԹՌԺ ԲԹՌՇՎ ՏԵՎʅȝ ԵȝՃԵ</li>
+        <li>C̾r̾e̾a̾t̾e̾ ̾Y̾o̾u̾r̾ ̾O̾w̾n̾ ̾S̾T̾y̾l̾i̾s̾h̾ ̾A̾n̾d̾ ̾F̾a̾n̾c̾y̾ ̾S̾T̾y̾l̾e̾ ̾t̾e̾x̾t̾</li>
+        <li>C͎r͎e͎a͎t͎e͎ Y͎o͎u͎r͎ O͎w͎n͎ S͎T͎y͎l͎i͎s͎h͎ A͎n͎d͎ F͎a͎n͎c͎y͎ S͎T͎y͎l͎e͎ t͎e͎x͎t͎</li>
+        <li>෴❤️෴ C҉r҉e҉a҉t҉e҉ ҉Y҉o҉u҉r҉ ҉O҉w҉n҉ ҉S҉T҉y҉l҉i҉s҉h҉ ҉A҉n҉d҉ ҉F҉a҉n҉c҉y҉ ҉S҉T҉y҉l҉e҉ ҉t҉e҉x҉t҉ ෴❤️</li>෴
+        <li>💖´ *•.¸♥¸.•** C͛⦚r͛⦚e͛⦚a͛⦚t͛⦚e͛⦚ Y͛⦚o͛⦚u͛⦚r͛⦚ O͛⦚w͛⦚n͛⦚ S͛⦚T͛⦚y͛⦚l͛⦚i͛⦚s͛⦚h͛⦚ A͛⦚n͛⦚d͛⦚ F͛⦚a͛⦚n͛⦚c͛⦚y͛⦚
+          S͛⦚T͛⦚y͛⦚l͛⦚e͛⦚ t͛⦚e͛⦚x͛⦚t͛⦚ **•.¸♥¸.•*´💖</li>
+        <li>C҉r҉e҉a҉t҉e҉ ҉Y҉o҉u҉r҉ ҉O҉w҉n҉ ҉S҉T҉y҉l҉i҉s҉h҉ ҉A҉n҉d҉ ҉F҉a҉n҉c҉y҉ ҉S҉T҉y҉l҉e҉ ҉t҉e҉x҉t</li>҉
+        <li>C͙r͙e͙a͙t͙e͙ Y͙o͙u͙r͙ O͙w͙n͙ S͙T͙y͙l͙i͙s͙h͙ A͙n͙d͙ F͙a͙n͙c͙y͙ S͙T͙y͙l͙e͙ t͙e͙x͙t͙</li>
+      </ul>
+      <p>Here are some impressive ways to write unique and stylish text for your social media profile. This way, you
+        will be able to gain more followers on social media. However, there are a plethora of options to choose from;
+        you can use the endless options given on the website and impress the visitors with your iconic social media
+        bios. Moreover, symbols and icons have proven to be useful in creating stunning text styles for your social
+        media platforms. </p>
+
+      <h2>Why Use Nickname Nickfinder Tool for Creating Nicknames?</h2>
+      <p>Nickname Nickfinder tools are simple and reliable to create different style text and designs for social media
+        platforms. The website gives free access to the tools and symbol features that allow you to make your profile
+        visibly impressive. In addition to this, you can access the tool or create amazing fun elements. The best part
+        is you don't need to pay any fees to access any of the website's features. </p>
+      <p>Moreover, you don't need to pass through the signup process and access the features directly. So, if you want
+        to create the best profile bio or write a creative nickname for your profile, this is the best tool to access
+        and add fun elements to the nickname. </p>
+    </div>
+    <div class="pages">
+      <a href="p/privacy-policy.html">Privacy Policy</a>
+      <a href="p/about-us.html">About Us</a>
+      <a href="p/contact-us.html">Contact Us</a>
+    </div>
+    <div class="copyright-area">© Copyright 2019-21 <a id="aryacredit" href="https://www.nickfinder.net/"
+        target="_blank" title="nickfinder.net">nickfinder.net</a></div>
+  </footer>
+
+
+</html>
